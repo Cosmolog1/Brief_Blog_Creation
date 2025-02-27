@@ -23,17 +23,14 @@
             <a class="nav-link active" aria-current="page" href="index.php">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="archive.php">Archive</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="single.php">Single</a>
+            <a class="nav-link" href="archive.php" target="_blank">Archive</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="creat article.php">Creat article</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
+              Catégories
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Action</a></li>

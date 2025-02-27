@@ -1,7 +1,12 @@
 <!-- include header /component/header.php link :css
 require_once fonction -->
+
+
 <?php
+require_once("function/article-db.php");
+$articles = getArticles();
 include_once("component/header.php");
+
 ?>
 
 

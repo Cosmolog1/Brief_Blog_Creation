@@ -1,4 +1,6 @@
 <?php
+require_once("function/article-db.php");
+$articles = getArticles();
 include_once("component/header.php");
 ?>
 
@@ -8,27 +10,29 @@ include_once("component/header.php");
 <h1>Archive</h1>
 
 
-<!-- // "pour chacun des articles je veut un article" ---- foreach
-//  faire une card bootstrap
 
-foreach($articles as $article){
-    
-}
+<div class="row g-3">
 
-$articles = [] -->
+    <?php
+
+    foreach ($articles as $key => $article): ?>
+
+        <div class="col-lg-4 col-md-6">
+            <div class="card">
+                <?php
+
+                include("component/card.php") ?>
+
+            </div>
+        </div>
+
+    <?php
+    endforeach;
+
+    ?>
 
 
-<!-- // CARTE  -->
-
-
-<?php
-/* exemple 1 */
-
-for ($i = 1; $i <= 3; $i++) {
-    include("component/card.php");
-}
-?>
-
+</div>
 
 
 
