@@ -9,7 +9,9 @@ require_once('assets/db/pdo.php');
 function getArticles()
 {
     global $pdo; // Toujours là
-    $sql = "SELECT * FROM article JOIN categorie ON article.categorie_id = categorie.id;";
+    $sql = "SELECT a.*, c.name AS category_name
+    FROM article  AS a
+    JOIN categorie AS c ON a.categorie_id = c.id";
     $stmt = $pdo->prepare($sql);
     $stmt->execute([]);
 
@@ -38,7 +40,6 @@ function getArticlesById(int $id)
     $stmt->execute([
         ':id' => $id
     ]);
-
 
     $articles = $stmt->fetch();
     return $articles;

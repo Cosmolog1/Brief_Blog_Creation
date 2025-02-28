@@ -1,6 +1,7 @@
 <?php
 require_once("function/article-db.php");
 $articles = getArticles();
+
 include_once("component/header.php");
 ?>
 
@@ -19,10 +20,7 @@ include_once("component/header.php");
 
         <div class="col-lg-4 col-md-6">
             <div class="card">
-                <?php
-
-                include("component/card.php") ?>
-
+                <?php include("component/card.php") ?>
             </div>
         </div>
 
